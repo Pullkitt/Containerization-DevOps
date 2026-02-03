@@ -55,7 +55,9 @@ Containers virtualize at the operating system level. They share the host OS kern
 ## Experiment Setup – Part A: Virtual Machine (Windows)
 
 **Step 1: Install VirtualBox**
-Download VirtualBox from the official website. Run the installer and keep default options. Restart the system if prompted.
+1)Download VirtualBox from the official website. 
+2)Run the installer and keep default options. 
+3)Restart the system if prompted.
 
 **Step 2: Install Vagrant**
 Download Vagrant for Windows. Install using default settings. Verify installation:
