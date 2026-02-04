@@ -7,4 +7,4 @@
 ## Experiments
 
 - [Experiment 1: Virtual Machines vs Containers](DevopsLab/EXP1/EXP1.md)
-- [Experiment 2: Docker Installation, Configuration, and Running Images](DevopsLab/EXP2/images/EXP2.md)
+- [Experiment 2: Docker Installation, Configuration, and Running Images](DevopsLab/EXP2/EXP2.md)
