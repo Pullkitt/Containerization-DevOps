@@ -118,8 +118,11 @@ vagrant destroy
 ---
 ## Experiment Setup – Part B: Containers using WSL (Windows)
 
+> Containers provide OS-level virtualization by sharing the host kernel, making them lightweight and fast to start. Docker is a popular containerization platform that allows you to package applications and their dependencies into portable containers.
+
 
 **Step 1: Install WSL 2**
+> Windows Subsystem for Linux (WSL) allows you to run a Linux environment directly on Windows, which is useful for running Docker and Linux-based tools.
 ```bash
 wsl --install
 ```
@@ -132,6 +135,7 @@ wsl --install -d Ubuntu
 ![Install Ubuntu on WSL](images/wsl-ubuntu.png)
 
 **Step 3: Install Docker Engine inside WSL**
+> Installing Docker Engine inside WSL enables you to run and manage containers natively in a Linux environment on Windows.
 ```bash
 sudo apt update
 sudo apt install -y docker.io
@@ -142,6 +146,7 @@ sudo usermod -aG docker $USER
 ![Step 3 WSL](images/step3wsl.png)
 
 **Step 4: Run Ubuntu Container with Nginx**
+> Pulling and running containers demonstrates how to deploy applications quickly and efficiently using Docker. The Nginx container is a common example for web server deployment.
 ```bash
 docker pull ubuntu
 ```
@@ -152,6 +157,7 @@ docker run -d -p 8080:80 --name nginx-container nginx
 ![Run Nginx Container](images/dockrunnginx.png)
 
 **Step 5: Verify Nginx in Container**
+> Verifying the running container ensures that the application is accessible and functioning as expected.
 ```bash
 curl localhost:8080
 ```
