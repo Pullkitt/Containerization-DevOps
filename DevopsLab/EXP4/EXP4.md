@@ -329,6 +329,7 @@ docker run -d -p 5000:5000 username/my-flask-app:latest
 mkdir my-node-app
 cd my-node-app
 ```
+![Create Node Directory](images/mkdircdnode.png)
 *Explanation:* Create a directory for the Node.js application, similar to what we did for the Flask app.
 
 **app.js:**
@@ -349,6 +350,7 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
 ```
+![Node.js App Code](images/appjs.png)
 *Explanation:* This Express.js application creates a simple web server with two endpoints: a root route that returns a greeting and a health check endpoint that returns JSON status.
 
 **package.json:**
@@ -379,6 +381,7 @@ EXPOSE 3000
 
 CMD ["node", "app.js"]
 ```
+![Node.js Dockerfile](images/dockfilenode.png)
 *Explanation:* This Dockerfile uses a lightweight Alpine-based Node.js image. It copies package files first for better caching, installs only production dependencies, copies the app code, exposes port 3000, and runs the application.
 
 ### Step 3: Build and Run
@@ -392,6 +395,8 @@ docker run -d -p 3000:3000 --name node-container my-node-app
 # Test
 curl http://localhost:3000
 ```
+![Build Node App](images/dockbuildnode.png)
+![Run Node Container](images/dockrunnode.png)
 *Explanation:* These commands build the Node.js image, run it in a container with port mapping, and test the application. The process is identical to the Flask example but demonstrates containerizing a different technology stack.
 
 ---
