@@ -14,15 +14,21 @@
 
 ## Lab
 
-- [Experiment 1: Virtual Machines vs Containers](DevopsLab/EXP1/)
-- [Experiment 2: Docker Installation, Configuration, and Running Images](DevopsLab/EXP2/)
-- [Experiment 3: Deploying NGINX Using Different Base Images and Comparing Image Layers](DevopsLab/EXP3/)
-- [Experiment 4: Docker Essentials](DevopsLab/EXP4/)
-- [Experiment 5: Data Persistence, Volumes, Environment Variables, Networking, Logs & Monitoring](DevopsLab/EXP5/)
-- [Experiment 6: Docker Run vs Docker Compose: Multi-Container Application Orchestration](DevopsLab/EXP6/)
+- [Experiment 1: Virtual Machines vs Containers](DevopsLab/EXP1/EXP1.md)
+	- Compares virtualization and containerization architecture, performance, and use cases.
+- [Experiment 2: Docker Installation, Configuration, and Running Images](DevopsLab/EXP2/EXP2.md)
+	- Covers Docker setup steps, daemon validation, and running first containers/images.
+- [Experiment 3: Deploying NGINX Using Different Base Images and Comparing Image Layers](DevopsLab/EXP3/EXP3.md)
+	- Demonstrates NGINX deployment with multiple base images and layer-size analysis.
+- [Experiment 4: Docker Essentials](DevopsLab/EXP4/EXP4.md)
+	- Practices core Docker commands for images, containers, networking, and lifecycle.
+- [Experiment 5: Data Persistence, Volumes, Environment Variables, Networking, Logs & Monitoring](DevopsLab/EXP5/EXP5.md)
+	- Focuses on state persistence, runtime configuration, connectivity, and observability.
+- [Experiment 6: Docker Run vs Docker Compose: Multi-Container Application Orchestration](DevopsLab/EXP6/EXP6.md)
+	- Compares single-command runs with Compose-based multi-service orchestration.
 
 ## Theory
 
-- [DevopsTheory](DevopsTheory/)
+- [DevOps Theory Notes](DevopsTheory/theory.md)
 
 
