@@ -1,0 +1,56 @@
+services:
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    container_name: pulkit-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      container_lan:
+        ipv4_address: ${DATABASE_IP}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pulkit-backend
+    restart: unless-stopped
+    environment:
+      DB_HOST: ${DATABASE_IP}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      container_lan:
+        ipv4_address: ${BACKEND_IP}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+volumes:
+  postgres_data:
+    name: pulkit-postgres-data
+
+networks:
+  container_lan:
+    external: true
+    name: ${EXTERNAL_NETWORK_NAME}
