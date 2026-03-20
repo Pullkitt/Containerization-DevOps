@@ -1,8 +1,8 @@
 # Containerized Web Application with PostgreSQL
 
-[![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?logo=github)](https://github.com/Pullkitt/Container-WebApp)
+[![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?logo=github)](https://github.com/Pullkitt/Containerization-DevOps/tree/main/Container-WebApp)
 
-This repository contains a containerized web application built for Assignment 1 with the following stack:
+This directory contains a containerized web application built for Assignment 1 with the following stack:
 
 - FastAPI backend
 - PostgreSQL database (custom image)
@@ -13,7 +13,7 @@ This repository contains a containerized web application built for Assignment 1 
 
 ## GitHub Repository
 
-https://github.com/Pullkitt/Container-WebApp
+https://github.com/Pullkitt/Containerization-DevOps/tree/main/Container-WebApp
 
 ## Project Structure
 
