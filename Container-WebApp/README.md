@@ -15,6 +15,11 @@ This directory contains a containerized web application built for Assignment 1 w
 
 https://github.com/Pullkitt/Containerization-DevOps/tree/main/Container-WebApp
 
+## Documentation
+
+- [Project Report](docs/report-project.md)
+- [Macvlan vs IPvlan Report](docs/macvlan-vs-ipvlan.md)
+
 ## Project Structure
 
 ```text
