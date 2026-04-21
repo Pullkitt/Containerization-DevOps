@@ -26,6 +26,10 @@
 	- Focuses on state persistence, runtime configuration, connectivity, and observability.
 - [Experiment 6: Docker Run vs Docker Compose: Multi-Container Application Orchestration](DevopsLab/EXP6/EXP6.md)
 	- Compares single-command runs with Compose-based multi-service orchestration.
+- [Experiment 7: CI/CD using Jenkins, GitHub and Docker Hub](DevopsLab/EXP7/EXP7.md)
+	- Covers pipeline automation, Docker image builds, and pushing images to Docker Hub.
+- [Experiment 8: Ansible](DevopsLab/EXP8/EXP8.md)
+	- Introduces configuration management, inventory, and playbook-based automation.
 
 ## Theory
 
