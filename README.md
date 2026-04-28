@@ -30,6 +30,12 @@
 	- Covers pipeline automation, Docker image builds, and pushing images to Docker Hub.
 - [Experiment 8: Ansible](DevopsLab/EXP8/EXP8.md)
 	- Introduces configuration management, inventory, and playbook-based automation.
+- [Experiment 10: SonarQube - Static Code Analysis](DevopsLab/EXP10/EXP10.md)
+	- Covers static code analysis for detecting bugs, vulnerabilities, and code quality issues using SonarQube.
+- [Experiment 11: Orchestration using Docker Compose and Docker Swarm](DevopsLab/EXP11/EXP11.md)
+	- Demonstrates multi-container orchestration, scaling, and self-healing capabilities using Docker Swarm.
+- [Experiment 12: Container Orchestration using Kubernetes](DevopsLab/EXP12/EXP12.md)
+	- Explores Kubernetes fundamentals, deployment, scaling, and comparison with Docker Swarm.
 
 ## Theory
 
